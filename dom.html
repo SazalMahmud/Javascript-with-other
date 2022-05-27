@@ -1,47 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-
-
-    </head>
-    <body>
-        <header>
-            <H1>Welcome to my blog website</H1>
-        </header>
-        <main>
-            <section id="blogs" class="blogs">
-                <header>
-                    <h2>blog list</h2>
-                    <ul id ='blog-list'>
-                        <li> blog-1 </li>
-                        <li> blog-2 </li>
-                        <li> blog-3 </li>
-                        <li> blog-4 </li>
-                    </ul>
-                </header>
-
-            </section>
-        </main>
-        <script>
-            // create and add elements  by using js
-            // create the element
-            const li =document.createElement('li');
-            li.innerText = 'blog-5';
-            const ul = document.getElementById('blog-list');
-            // append new element
-            ul.appendChild(li);
-
-
-            //add article
-            const article =document.createElement('article');
-            const h3 = document.createElement('h3');
-            h3.innerText = 'My good blog';
-            const p = document.createElement('p');
-            p.innerText = 'hi, am sazal , I am a javascript developer ';
-            article.appendChild(h3);
-            article.appendChild(p);
-            const addBlog = document.getElementById('blogs');
-            addBlog.appendChild(article);
-        </script>
-    </body>
+<head>
+    <title>Dom</title>
+</head>
+<body>
+     <div id="friend-container">
+         <div class="friend">
+             <h3 class="friend-name">friend-1</h3>
+             <p>Lorem, ipsum.</p>
+         </div>
+         <div class="friend">
+             <h3 class="friend-name">friend-2</h3>
+             <p>Soluta, repellat.</p>
+         </div>
+         <div class="friend">
+             <h3 class="friend-name">friend-3</h3>
+             <p>Facilis, modi?</p>
+         </div>
+         <div class="friend">
+             <h3 class="friend-name">friend 4</h3>
+             <p>Est, quibusdam.</p>
+         </div>
+     </div>
+     <div>
+         <h2>Control room</h2>
+         <button id="add-border">Add Border</button>
+         <button onclick="AddbackgroundColor()">Add Background</button>
+         <button id="AddFriend"> Add Friend</button>
+         <button>Color friend Name</button>
+         <button>Extra</button>
+     </div>
+     <script src="js/dom.js"></script>
+</body>
 </html>
